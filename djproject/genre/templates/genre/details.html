@@ -1,0 +1,16 @@
+{% extends 'genre/base.html' %}
+
+    {% block content %}
+    {% for pieceobj in Pitem %}
+        <div align="center">
+            <img src="{{ pieceobj.piececover }}" height="200" width="200">
+            <h3>{{ pieceobj.title }}</h3>
+            <h3>{{ pieceobj.artists }}</h3>
+            <h4>{{ pieceobj.typ }}</h4>
+            <h4>{{ pieceobj.year }}</h4>
+            <br>
+        </div>
+    {% endfor %}    
+    {% endblock %}
+</body>
+</html>

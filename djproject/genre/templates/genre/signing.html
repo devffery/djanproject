@@ -1,0 +1,25 @@
+{% extends 'genre/base.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-11 col-md-4 mx-auto mt-5">
+            <h1>Sign Up</h1>
+            <form actions="" method="POST">
+            {% csrf_token %}
+            Username:
+            <input type:'test' name="username">
+            <br>   
+
+            Email:
+            <input type:'test' name="username">
+            <br>
+
+            Password:
+            <input type="password" name="password">
+            <br>
+           
+            <button class="btn btn-secondary" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
